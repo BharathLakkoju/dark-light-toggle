@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=chillax@600,500,700,400&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/18718c7391.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+  <title>Toggle-Switch</title>
+</head>
+
+<body class="body">
+  <main>
+    <div class="navbar-container">
+      <nav class="navbar">
+        <div class="icon-menu-container">
+          <button class="burger-menu" type="button" onclick="menu()">
+            <i class="fa-solid fa-bars fa-2xl icon"></i>
+          </button>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-items">
+            <li class="menu-item">HOME</li>
+            <li class="menu-item">CATEGORIES</li>
+            <li class="menu-item">CONTACT</li>
+            <li class="menu-item">ACCOUNT</li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="search-container">
+            <input type="text" name="search-query" id="search-query" placeholder="Search" />
+          </div>
+          <div class="icons">
+            <button type="button" class="search-icon-container">
+              <i class="fa-solid fa-magnifying-glass fa-xl search-icon icon"></i>
+            </button>
+            <button class="theme-toggle-off" type="button" onclick="changeTheme()">
+              <i class="toggler fa-solid fa-toggle-off fa-2xl icon"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="main-container">
+      <div class="prblm-container">
+        <h1 class="main-heading">Character at the nth index</h1>
+        <br />
+        <span class="prblm-stmt">given a string and a number return the character at the nth index
+          in the given string using javascript</span>
+        <hr />
+      </div>
+      <div class="m1">
+        <p class="p1">
+          To get the character at the nth index in a given string using
+          JavaScript, you can use the built-in
+          <span class="e">charAt()</span> method.
+        </p>
+        <p class="p2">
+          The <span class="e">charAt()</span> method accepts the character
+          index as an argument and returns its value in the string.
+        </p>
+        <p>
+          Here is an example that gets the character at the second index of
+          the following string:
+        </p>
+      </div>
+      <code>
+    <pre class="coder">
+const str = "Hello World";
+const char = str.charAt(2);
+console.log(char); // Output: "l"
+</pre>
+</code>
+      <div class="m1">
+        <p class="p1">
+          Note that the index of the first character in a string is 0, the second character is 1, and so on.
+          If the index is out of bounds for the string,
+        </p>
+      </div>
+      <div class="m1">
+        <p class="p1">
+          <span class="e">charAt()</span> returns an empty string. You can also use square bracket notation
+          <span class="e">[]</span> to get the character at a particular index in a string. If the index is
+          out of bounds for the string, the square bracket notation returns <span class="e">undefined</span>.
+          Here is an example:
+        </p>
+      </div>
+      <code>
+    <pre class="coder">
+const str = "Hello World";
+const char = str[2]; 
+console.log(char); // Output: "l"
+</pre>
+</code>
+      <div class="m1">
+        <p class="p1">
+          Therefore, to get the character at the nth index in a given string using JavaScript, you can use
+          either of the following:
+        </p>
+      </div>
+      <code>
+<pre class="coder">
+const char = str.charAt(n); 
+const char = str[n];</pre>
+</code>
+      <div class="m2">
+        <p class="p1">
+          where <span class="e">n</span> is the index of the character you want to get.
+        </p>
+      </div>
+      <hr>
+      <div class="cites">
+        <h3>Citations:</h3>
+        <cite>
+          <p class="p1">[1] <a
+              href="https://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string">StackOverflow</a>
+          </p>
+          <p class="p1">[2] <a
+              href="https://www.geeksforgeeks.org/how-to-get-nth-occurrence-of-a-string-in-javascript/">geeksforgeeks</a>
+          </p>
+          <p class="p1">[3] <a href="https://bobbyhadz.com/blog/javascript-get-nth-character-in-string">Bobbyhadz</a>
+          </p>
+          <p class="p1">[4] <a href="https://java2blog.com/get-nth-character-string-javascript/">Java2blog</a>
+          </p>
+          <p class="p1">[5] <a href="https://reactgo.com/javascript-get-nth-character-string/">Reactgo</a>
+          </p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
