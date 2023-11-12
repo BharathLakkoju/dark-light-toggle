@@ -26,4 +26,4 @@ Preview - Responsive NavBar
 
 ---
 
-### This should help you understand how to implement `Responsive Navbar` as well as `Dark theme toggle`.
+This should help you understand how to implement `Responsive Navbar` as well as `Dark theme toggle`.
