@@ -154,8 +154,39 @@ cite > p {
     display: none;
 }
 @media screen and (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        padding: 50px;
+        box-shadow: 0px 0px 100px black;
+    }
+    .side-menu-item > a {
+        text-decoration: none;
+        color: unset;
+        transition: 300ms;
+    }
+    .side-menu-item > a:hover {
+        font-size: 55px;
+        transition: 300ms;
+    }
+    .darker-side {
+        background-color: black;
+        color: white;
+        box-shadow: 0px 0px 100px white;
+    }
+    .side-menu-items {
+        list-style-type: none;
+        font-size: 50px;
+        font-weight: bolder;
+    }
     .prblm-container {
         margin: 5% 0;
+    }
+    .main-heading {
+        font-size: 36px;
     }
     .menu-items {
         width: 350px;
@@ -177,6 +208,14 @@ cite > p {
     }
     .search-icon-container {
         display: unset;
+    }
+    .down-search-open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-container-responsive > input {
+        width: 300px;
     }
 }
 

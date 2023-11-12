@@ -13,11 +13,22 @@
 
 <body class="body">
   <main>
+    <div class="sidebar no-display">
+      <button class="burger-menu" type="button" onclick="closeMenu()">
+        <i class="fa-solid fa-x fa-2xl menu icon"></i>
+      </button>
+      <ul class="side-menu-items">
+        <li class="side-menu-item"><a href="#home">HOME</a></li>
+        <li class="side-menu-item"><a href="#categories">CATEGORIES</a></li>
+        <li class="side-menu-item"><a href="#contact">CONTACT</a></li>
+        <li class="side-menu-item"><a href="#account">ACCOUNT</a></li>
+      </ul>
+    </div>
     <div class="navbar-container">
       <nav class="navbar">
         <div class="icon-menu-container">
-          <button class="burger-menu" type="button" onclick="menu()">
-            <i class="fa-solid fa-bars fa-2xl icon"></i>
+          <button class="burger-menu" type="button" onclick="openMenu()">
+            <i class="fa-solid fa-bars fa-2xl menu icon"></i>
           </button>
         </div>
         <div class="menu-container">
@@ -33,7 +44,7 @@
             <input type="text" name="search-query" id="search-query" placeholder="Search" />
           </div>
           <div class="icons">
-            <button type="button" class="search-icon-container">
+            <button type="button" class="search-icon-container" onclick="openSearch()">
               <i class="fa-solid fa-magnifying-glass fa-xl search-icon icon"></i>
             </button>
             <button class="theme-toggle-off" type="button" onclick="changeTheme()">
@@ -43,11 +54,16 @@
         </div>
       </nav>
     </div>
+    <div class="down-search-open">
+      <div class="search-container-responsive no-display">
+        <input type="text" name="search-query" id="search-query" placeholder="Search" />
+      </div>
+    </div>
     <section class="main-container">
       <div class="prblm-container">
         <h1 class="main-heading">Character at the nth index</h1>
         <br />
-        <span class="prblm-stmt">given a string and a number return the character at the nth index
+        <span class="prblm-stmt">Given a string and a number return the character at the nth index
           in the given string using javascript</span>
         <hr />
       </div>
