@@ -25,3 +25,5 @@ Preview - Responsive NavBar
 ![responsive navbar](preview/resp-navbar.png)
 
 ---
+
+### This should help you understand how to implement `Responsive Navbar` as well as `Dark theme toggle`.
